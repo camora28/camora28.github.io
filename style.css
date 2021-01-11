@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav {
+    margin-top: 10px;
+    list-style: none;
+    padding: 0;
+    background-color: aquamarine;
+}
+
+.main-nav__item {
+    display: inline;
+}
+
+.main-nav__item a {
+    color: brown;
+    padding: 10px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.main-nav__item a:hover {
+    color: blue;
+}
+
+.main-nav__item a:active {
+    color: white;
+}
+
+.main-nav__item a::after {
+    content: " | ";
+}
+
+main {
+    font-size: 20px;
+}
+
+.text-section {
+    font-size: 1.5em;
+}
+
+.text-section div {
+    font-size: 1.5em;        
+}
