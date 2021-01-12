@@ -2,18 +2,24 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-body {
-    background-color: #007f5f;
     font-family: monospace;
 }
 
+body {
+    display: inline-block;
+    background-color: #007f5f;
+    width: 100vw;
+    height: 100vh;
+}
+
+
 .main-nav {
+    display: inline-block; 
     background-color: #aacc00;
+    width: 100%;
     box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.5);
     font-weight:lighter;
-    font-size: 25px;
+    font-size: 1.5rem;
     margin: 5px;       
     padding: 0.5rem;
     list-style: none;
@@ -30,38 +36,67 @@ body {
     border-radius: 4px;
     text-decoration: none;
 }
-
 .main-nav__item a:hover {
     color: #ffff3f;
 }
-
 .main-nav__item a:active {
     color: white;
 }
-
 .main-nav__item a::after {
     content: " | ";
 }
-
-main {
-    background-color: #aacc00;
-    height: 100vh;
-    box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.5);
-    border-radius: 5px;
-    margin: 5px;
-    padding: 10px;
-    border: 0.5px solid;
-    font-size: 20px;
-}
-
-.container-sidebar {
+aside {
+    display: inline-block;
     background-color: #ffff3f;
-    width: 25%;
-    height: auto;
+    width: 20%;
+    min-width: 20%;
+    height: 80%;
     box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.5);
-    border-radius: 5px;
-    padding: 2px;
+    border: 1px solid black;
+        margin: 5px 5px auto;
+    padding: 10px;
+    border-radius: 10px;
 }
-.container-sidebar li {
-    list-style: none;
+
+.aside-card {
+    background-color: #dddf00 ;
+}
+
+/* ## main */
+main {
+    display: inline-block;
+    background-color: #aacc00;
+    width: 70%;
+    height: 80%;
+    box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.5);
+    border: 1px solid black;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+/* ## footer */
+
+footer {
+    display: inline-block;
+    box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 0.5rem;
+    text-align: center;
+    /* justify-content: center; */
+}
+footer ul {
+    display: inline;
+}
+footer ul li {
+    display: inline;
+}
+footer img{
+    /* display: inline; */
+    width: 30px;
+    height: 30px;
 }
